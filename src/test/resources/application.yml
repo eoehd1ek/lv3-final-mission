@@ -27,24 +27,3 @@ spring:
   sql:
     init:
       data-locations:
-
-restclient:
-  timeout:
-    connection: 3000
-    read: 5000
-
-logging:
-  level:
-    root: INFO
-    finalmission: DEBUG
-    org:
-      springframework: INFO
-    finalmission:
-      filter:
-        MDCFilter: DEBUG
-  file:
-    name: logs/application.json
-
-jwt:
-  token:
-    expire-length: 3600000

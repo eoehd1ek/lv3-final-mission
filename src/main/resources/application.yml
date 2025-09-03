@@ -5,11 +5,6 @@ server:
 spring:
   application:
     name: application
-  datasource:
-    driver-class-name: org.h2.Driver
-    url: jdbc:h2:mem:db
-    username: sa
-    password:
   jpa:
     open-in-view: false
     hibernate:
@@ -24,24 +19,3 @@ spring:
     multipart:
       max-file-size: 10MB
       max-request-size: 11MB
-
-restclient:
-  timeout:
-    connection: 3000
-    read: 5000
-
-logging:
-  level:
-    root: INFO
-    finalmission: DEBUG
-    org:
-      springframework: INFO
-    finalmission:
-      filter:
-        MDCFilter: DEBUG
-  file:
-    name: logs/application.json
-
-jwt:
-  token:
-    expire-length: 3600000
